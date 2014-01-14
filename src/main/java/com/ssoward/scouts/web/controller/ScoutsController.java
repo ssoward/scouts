@@ -20,7 +20,7 @@ public class ScoutsController {
 
 
     @RequestMapping(method = RequestMethod.GET, value="/scouts", produces = MediaType.APPLICATION_JSON_VALUE)
-    public String getscout(@RequestParam(value = "page", required = false, defaultValue = "0") int page) {
+    public  ResponseEntity<String> getscout(@RequestParam(value = "page", required = false, defaultValue = "0") int page) {
         System.out.println("scout:"+SecurityContextHolder.getContext().getAuthentication().getPrincipal());
         return new ResponseEntity<>("hello scout", HttpStatus.OK);
     }
