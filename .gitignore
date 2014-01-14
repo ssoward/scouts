@@ -1,0 +1,11 @@
+.idea
+*.iml
+*.ipr
+*.iws
+target/
+atlassian-ide-plugin.xml
+.gitconfig
+qa/VantagePoint/nbproject/private/
+.classpath
+.project
+.settings/

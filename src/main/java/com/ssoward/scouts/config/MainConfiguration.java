@@ -44,8 +44,6 @@ public class MainConfiguration {
         SpringApplication.run(MainConfiguration.class, args);
     }
 
-
-
     //security
     @Configuration
     @EnableWebSecurity
@@ -74,6 +72,5 @@ public class MainConfiguration {
                     .withUser("scout").password("password").roles("USER");
         }
     }
-
 
 }
