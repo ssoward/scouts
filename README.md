@@ -7,3 +7,6 @@ TODOS:
 2. fix security
 3. data storage options and point security
 4. setup testing
+5. hyper media
+6. yaml
+7.

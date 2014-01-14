@@ -19,8 +19,8 @@ public class ScoutsController {
 
 
     @RequestMapping(method = RequestMethod.GET, value="/scouts", produces = MediaType.APPLICATION_JSON_VALUE)
-    ResponseEntity<String> getscout(@RequestParam(value = "page", required = false, defaultValue = "0") int page) {
-        return new ResponseEntity<>("hello scout", HttpStatus.OK);
+    public String getscout(@RequestParam(value = "page", required = false, defaultValue = "0") int page) {
+        return "hello world, you must be a scout or at least have the right permissions."; //new ResponseEntity<>("hello scout", HttpStatus.OK);
     }
 
     @RequestMapping(method = RequestMethod.GET, value="/leaders", produces = MediaType.APPLICATION_JSON_VALUE)
